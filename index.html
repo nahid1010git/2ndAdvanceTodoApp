@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2nd Todo project with techanalyzen</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+     <script src="./todo.js" defer></script>
+
+     <!-- <script src="./todoTow.js" defer></script> -->
+  </head>
+  <body>
+    <main>
+      <!-- header part start from here -->
+      <h1 class="main_titile">My Todo Lists</h1>
+      <h3>New Task Creation</h3>
+      <div class="separator"></div>
+      <!-- header part end from here -->
+
+      <!-- first section start from here -->
+      <form id="form">
+        <!-- task name input start -->
+        <div class="task_name">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name" required
+            placeholder="Add Your'e task"
+          />
+        </div>
+        <!-- task name input end -->
+        <!-- priority start from here -->
+
+        <div class="task_priority">
+          <label for="priority">Priority</label>
+          <select required name="priority" id="priority">
+            <option disabled selected>Select One</option>
+            <option value="high">High</option>
+            <option value="medium">medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+
+        <!-- priority end from here -->
+
+        <!-- date start from here -->
+
+        <div class="date">
+          <label for="date">Date</label>
+          <input required type="date" name="date" id="date" />
+        </div>
+        <!-- date end from here -->
+
+        <!-- submit button start from here -->
+        <div class="submit">
+          <input type="submit" value="Add Task" />
+        </div>
+
+        <!-- submit button end from here -->
+      </form>
+
+      <!-- first section end from here -->
+
+      <!-- 2nd section start from here -->
+
+      <h2>Task Management</h2>
+      <div class="separator"></div>
+
+      <!-- search start -->
+
+      <div class="tools">
+        <!-- input search start -->
+        <div class="search">
+          <label for="search">Search</label>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="search by name"
+          />
+        </div>
+
+        <!-- input search end -->
+
+        <!-- filter start -->
+
+        <div class="filter_section">
+          <label for="filter">Filter</label>
+          <select name="filter" id="filter">
+            <option value="all">All</option>
+            <option value="1">Complete</option>
+            <option value="0">Incomplete</option>
+            <option value="today">Today</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+
+        </div>
+        <!-- filter end -->
+
+        <!-- sort start-->
+
+        <div class="sort">
+          <label for="sort">Sort</label>
+          <select name="sort" id="sort">
+            <option value="newest">Newest</option>
+
+            <option value="oldest">oldest</option>
+          </select>
+        </div>
+
+        <!-- sort end-->
+
+        <!-- date start -->
+        <div class="by_date">
+          <label for="by_date">By Date</label>
+          <input type="date" name="by_date" id="by_date" />
+        </div>
+
+        <!-- date end -->
+      </div>
+      <!-- search end -->
+
+      <!-- 2nd section end from here -->
+
+
+
+      <!-- third section start from here -->
+
+      <div id="bulk_action">
+        <button id="delete_btn">Delete</button>
+        <button id="edit_btn">Edit</button>
+        <button id="dismiss">Dismiss</button>
+      </div>
+
+      <!-- third section end from here -->
+
+      
+
+      <!-- edit section start from here -->
+
+      <div id="edit_section">
+        <form id="edit_form">
+          <!-- task name start-->
+
+          <div class="task_name_two">
+            <label for="edit_name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="edit_name"
+              placeholder="Add a new task"
+            />
+          </div>
+
+          <!-- task name end-->
+          <!-- priority start -->
+          <div class="task_priority_two">
+            <label for="edit_priority">Priority</label>
+            <select name="priority" id="edit_priority">
+              <option disabled selected value="">Select One</option>
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+            </select>
+          </div>
+
+          <!-- priority end -->
+
+          <!-- date start -->
+
+          <div class="edit_date">
+            <label for="edit_date">Date</label>
+            <input type="date" value="" name="date" id="edit_date" />
+          </div>
+          <!-- date end -->
+          <div class="edit_submit">
+            <input type="submit" value="Add Now" id="edit_submit_btn" />
+          </div>
+        </form>
+      </div>
+
+      <!-- edit section end from here -->
+
+      <!-- table section start from here -->
+      <table>
+        <thead>
+          <tr>
+            <th>
+              <label for="checkbox">All</label>
+              <input type="checkbox" name="checkbox" id="checkbox" />
+            </th>
+            <th>NO:</th>
+            <th>Task Name</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="tbody">
+          
+          <tr class="body_tr">
+            <td class="one"><input type="checkbox"></td>
+            <td class="two">01</td>
+            <td class="three">coading..</td>
+            <td class="for">Hight</td>
+            <td class="five">incomplete</td>
+            <td class="six">2024-4-28</td>
+            <td class="saven">
+              <button id="edit"><i class="fa-regular fa-pen-to-square"></i></button>
+              <button id="check"><i class="fa-regular fa-square-check"></i></button>
+              <button id="delete"><i class="fa-solid fa-trash-can"></i></button>
+            </td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+      <!-- table section end from here -->
+    </main>
+  </body>
+</html>

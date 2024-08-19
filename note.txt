@@ -1,0 +1,39 @@
+
+
+
+
+1,,, jehutu data gula thakce amader from er moddhe age from take dhore nibo...
+2,, form er akta default behavior ache seta holo form er submit button e click korle sala nije nije data server er pathanor try kore and page 
+reload niye nei...
+
+
+3.form.elements korle form er moddhe jotogula input ache segula re pabo r amra seitake kaj e lagiye akta object create korbo
+
+4 . akta object nibo faka object jar moddhe amra loop korbo r form er elements gula diye r elements name filed er value k korbo 
+object er property name r elements.value diye korbo sei propertyer value....
+
+
+5 .. jehutu protita object e initial vabe incomplete create hobe tai amra sorasori object er status:0 kore dibo 
+
+6,,, object creation ses hole amra seta k local storage diye dibo
+
+7 .. localstorage e add korar age amra dekhbo j storage e kicu ache kina sei jonno akta get function thakbe jeta localstorage theke data get kore niye asbe
+
+
+8.. akta faka array nicce jate kore data jodi thake tahole aslo r na asle faka array pabo kicu akta pabo
+
+
+9.. amra local storage theke data niye aslam abr akta task push o korlam abr sob data gula k abr nijer jaigai diye aste hobe jehutu amader kaj ses 
+
+10,, dekha jacce form add korar por o input gulo clear hoccena tai amra from er data neoar por sei form take reset kore dibo
+
+
+11, aie bar kaj holo task gulo k ui te show korano
+
+12, sob data load korbo thek loop korbo tarpor protita loop e table er tr create kore tbody te add kore dibo...
+
+
+
+13,, akta sundor abong important concept ache eie khane amra j tasks gula pacce sugulare proti loop e tr create kore tbody te na diye sob gula crete kore tarpor 
+tbody te diye dibo ,,, ete kore data process faster hobe..
+

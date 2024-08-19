@@ -1,0 +1,465 @@
+::before,
+::after,
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  border: none
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.69),rgba(0, 0, 0, 0.311)),url("./images/robert-lukeman-_RBcxo9AU-U-unsplash.jpg");
+    background-size: cover;
+  background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: ce;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+main {
+  background-image: linear-gradient(to right,rgba(174, 255, 0, 0.171),rgba(255, 166, 0, 0.171),rgba(122, 0, 128, 0.171),rgba(0, 128, 0, 0.171));
+box-shadow: 0px 0px 4px white;
+  margin: 0px auto;
+  margin-top: 10px;
+  width: 1200px;
+  padding: 5px;
+  border-radius: 10px;
+  /* height: 800px; */
+  overflow: hidden;
+}
+
+.separator{
+  height: 2px;
+  background-color: orange;
+  width: 100%;
+}
+/* first section styling start form here */
+
+.main_titile {
+  text-align: center;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 900;
+  color: white;
+  
+}
+
+h3,h2{
+  font-size: 22px;
+  font-weight: 400;
+ 
+
+}
+
+#form,.tools{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+  margin-top: 5px;
+  
+}
+
+.task_name,.task_priority,.date{
+  flex-basis: 29%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgba(255, 99, 71, 0.603);
+border-radius: 5px;
+overflow: hidden;
+box-shadow: 0px 0px 3px white;
+
+}
+/* input start */
+.task_name{
+
+}
+label{
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 4px;
+  color: rgb(4, 2, 1);
+}
+
+.task_name #name,.task_priority #priority,#date{
+  flex-grow: 1;
+  height: 100%;
+  font-size: 14px;
+  padding: 3px;
+}
+
+.submit{
+
+
+  flex-basis: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.submit input{
+  font-size: 18px; 
+  padding:0px 3px;
+  background-color: rgba(255, 99, 71, 0.603);
+  color: white;
+   text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 5px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+
+.submit input:hover{
+  background-color: rgba(255, 99, 71, 0.834);
+  transform: scale(1.1);
+}
+/* first section styling end form here */
+
+
+/* second section start from here */
+
+.tools{
+  column-gap:5px;
+}
+
+.search,.filter_section,.sort,.by_date{
+
+ flex-basis: 25%;
+  height: 100%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+background-color: rgba(255, 99, 71, 0.603);
+border-radius: 5px;
+overflow: hidden;
+box-shadow: 0px 0px 3px white;
+padding: 0px 3px;
+}
+
+#search,#filter,#sort,#by_date{
+  flex-grow: 1;
+  height: 100%;
+  font-size: 14px;
+}
+
+
+/* second section end from here */
+
+
+/* third section bulk action start from here */
+
+#bulk_action{
+  
+  height: 35px;
+  margin-top: 5px;
+  display: flex;
+  column-gap: 4px;
+}
+
+#delete_btn,#edit_btn,#dismiss{
+  flex-basis: 33%;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color:rgba(255, 166, 0, 0.412);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+#bulk_action #delete_btn:hover{
+  background-color: rgba(0, 128, 0, 0.501);
+  color: white;
+}
+
+#bulk_action #edit_btn:hover{
+  background-color: rgba(0, 128, 0, 0.501);
+  color: white;
+}
+
+#bulk_action #dismiss:hover{
+  background-color: rgba(0, 128, 0, 0.501);
+  color: white;
+}
+
+
+
+/* third section bulk action end from here */
+
+
+/* edit section start form here */
+
+
+#edit_section{
+  height: 35px;
+}
+
+
+#edit_form{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+  margin-top: 5px;
+   }
+
+/* child */
+
+.task_name_two,.task_priority_two,.edit_date{
+
+  flex-basis: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+overflow: hidden;
+background-color: rgba(255, 99, 71, 0.603);
+padding: 0px 3px;
+}
+
+/* inputs */
+#edit_name,#edit_priority,#edit_date{
+  flex-grow: 1;
+font-size: 14px;
+ height: 100%;
+ padding: 0px 3px;
+}
+
+
+
+
+
+
+.edit_submit{
+height: 100%;
+flex-basis: 9%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.edit_submit,#edit_submit_btn{
+  font-size: 15px; 
+  padding:0px 3px;
+  background-color: rgba(255, 99, 71, 0.603);
+  color: white;
+   text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.edit_submit,#edit_submit_btn:hover{
+  background-color: rgba(255, 99, 71, 0.834);
+  transform: scale(1.1);
+}
+
+
+/* edit section end form here */
+
+
+/* table styling start from here  */
+
+table{
+  width: 100%;
+  padding: 5px;
+  /* background-color: rebeccapurple; */
+}
+
+thead{
+  background-color: orange;
+  height: 40px;
+
+}
+#checkbox{
+
+  cursor: pointer;
+
+
+}
+th{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+#tbody{
+  width: 100%;
+
+}
+
+
+.body_tr{
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.323);
+
+
+
+  
+}
+
+.body_tr:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+td{
+  font-size: 16px;
+  text-transform: capitalize;
+ color: white;
+
+}
+
+.one,.two,.three,.for,.five,.six,.saven{
+ 
+  text-align: center;
+
+}
+
+.one{
+  width: 45px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.two{
+  width: 2px;
+}
+.three{
+text-align: left;
+padding: 0px 5px;
+overflow: hidden;
+}
+.for{
+  width: 5px;
+}
+.five{
+  width: 90px
+}
+.six{
+  width:130px;
+}
+.saven{
+  width: 150px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+
+
+#edit,#check,#delete{
+  padding: 5px;
+  text-transform: uppercase;
+ font-weight: bold;
+ border-radius: 3px;
+ cursor: pointer;
+}
+i{
+
+  font-size: 22px;
+  pointer-events: none;
+
+}
+ 
+#edit{
+  background-color: orange;
+}
+
+#edit:hover{
+background-color: rgb(228, 27, 191);
+}
+
+
+#check{
+  background-color: tomato;
+}
+
+#check:hover{
+background-color: green;
+}
+
+#delete{
+  background-color: red;
+}
+
+#delete:hover{
+  background-color: rebeccapurple;
+}
+/* table styling end from here 
+
+
+/* style for js */
+
+
+.taskNameEdit{
+
+  height:25px;
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 0px 3px;
+}
+
+#editPrio{
+
+height: 25px;
+font-size: 13px;
+cursor: pointer;
+
+}
+#editPrio .same_style{
+
+  font-size: 13px;
+}
+.editStatus{
+  height: 25px;
+font-size: 13px;
+cursor: pointer;
+
+}
+.editDate{
+  height: 25px;
+  font-size: 14px;
+}
+
+.upButton{
+  padding: 5px 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: rgba(255, 166, 0, 0.619);
+  cursor: pointer;
+ 
+}
+.upButton:hover{
+  background-color: tomato;
+  color: white;
+}
+
+.nothing{
+  font-size: 30px;
+  text-align: center;
+  background-color: white;
+
+}
+
+
+/* hidden part is here  */
+ #edit_section{
+  display: none;
+}
+
+
+#bulk_action{
+  display: none;
+}
+
